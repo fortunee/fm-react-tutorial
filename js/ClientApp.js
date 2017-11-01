@@ -1,6 +1,22 @@
+// Global React DOM
+
+var ce = React.createElement;
+
+var MyTitle = function () {
+    return (
+        ce('div', null, 
+            ce('h1', null, 'Check out this component!')
+        )
+    );
+};
+
 var MyFirstComponent = function() {
-    return React.createElement('div', null, 
-        React.createElement('h1', null, "This is my first component")
+    return (
+        ce('div', null, 
+            ce(MyTitle, null),
+            ce(MyTitle, null),
+            ce(MyTitle, null)
+        )
     );
 };
 
