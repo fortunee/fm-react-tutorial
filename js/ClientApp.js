@@ -1,8 +1,8 @@
 // Global React DOM
 
-var ce = React.createElement;
+const ce = React.createElement;
 
-var MyTitle = function(props) {
+const MyTitle = function(props) {
   return ce(
     "div",
     null,
@@ -10,7 +10,7 @@ var MyTitle = function(props) {
   );
 };
 
-var MyFirstComponent = function() {
+const MyFirstComponent = function() {
   return ce(
     "div",
     null,
